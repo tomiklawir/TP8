@@ -103,3 +103,16 @@ function reemplazarPalabra() {
    
     document.getElementById("resultado").innerHTML = StringCambiado;
 }
+
+// CORTAR TEXTO
+function obtenerPrimerosCaracteres() {
+   
+    let string = document.getElementById("string").value;
+    let numero = parseInt(document.getElementById("numero").value);
+    if (numero > cadena.length)
+     {
+        numero = cadena.length;
+    }
+    let stringCortado = string.substring(0, numero);
+    document.getElementById("resultado").innerHTML = stringCortado;
+}
