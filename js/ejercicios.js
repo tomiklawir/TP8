@@ -89,3 +89,17 @@ function filtrarNombres() {
     let nombresConA = listaNombres.filter(nombre => nombre.charAt(0).toLowerCase() === 'a');
     document.getElementById("resultado").innerHTML = nombresConA.length > 0 ? nombresConA.join(', ') : 'No hay nombres que comiencen con "A"';
 }
+
+// REEMPLAZAR PALABRAS
+function reemplazarPalabra() {
+   
+    let string= document.getElementById("string").value;
+    let palabra = document.getElementById("palabra").value;
+    let cambio = document.getElementById("cambio").value;
+
+   
+    let stringCambiado= string.replaceAll(palabra, cambio);
+
+   
+    document.getElementById("resultado").innerHTML = StringCambiado;
+}
