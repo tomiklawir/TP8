@@ -124,3 +124,16 @@ function mostrarLista() {
     let resultado = arrayElementos.join(' - ');
     document.getElementById("resultado").innerHTML = resultado;
 }
+
+//Calcular recaudacion
+function calcularRecaudacion() {
+    let pedidos = document.getElementById("pedidos").value;
+
+    let arrayPedidos = pedidos.split(',');
+    let recaudacionTotal = 0;
+    arrayPedidos.forEach(pedido => {
+        let [nombre, total] = pedido.split(':').map(elemento => elemento.trim());
+        recaudacionTotal += parseFloat(total);
+    });
+    document.getElementById("resultado").innerHTML = Total: $${recaudacionTotal.toFixed(2)};
+}

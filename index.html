@@ -48,7 +48,21 @@
      <input type="text" id="lista" /><br>
  
      <button onclick="mostrarLista()">Mostrar Lista</button>
-     
+
+       <!--Calcular recaudacion -->
+    <h1>Calcular recaudación total de pedidos</h1>
+
+    <label for="pedidos">Introduce los pedidos con sus totales (formato "nombre:total"):</label>
+    <input type="text" id="pedidos" /><br>
+
+    <button onclick="calcularRecaudacion()">Calcular Recaudación</button>
+
+    <h2>Recaudación Total:</h2>
+
+    <h2>Resultado:</h2>
+    
+    <div id="resultado"></div>
+    
     <script> src = "js/tirandoFruta.js"</script>
     <script> src = "js/calculadoraEdad.js"</script>
 </body>
