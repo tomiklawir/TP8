@@ -18,7 +18,7 @@ const edad = calcularEdad(fechaNacimiento);
 console.log(`Hola ${nombre}, tienes ${edad} años!`);
 
 // TIRANDO FRUTA
-const frutas = {
+const frutas = [
     "melon",
     "guayaba",
     "mango",
@@ -28,7 +28,7 @@ const frutas = {
     "sandia",
     "papaya",
     "nispero"
-};
+];
 
 const frutaUsuario = prompt("Ingrese una fruta").toLowerCase();
     if(frutas.includes(frutaUsuario))
