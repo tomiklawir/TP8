@@ -1,16 +1,15 @@
 // TIRANDO FRUTA
-function tirandoFruta(){
-    const frutas = {
-        "melon",
-        "guayaba",
-        "mango",
-        "anana",
-        "frambuesa",
-        "maracuya",
-        "sandia",
-        "papaya",
-        "nispero"
-    };
+const frutas = {
+    "melon",
+    "guayaba",
+    "mango",
+    "anana",
+    "frambuesa",
+    "maracuya",
+    "sandia",
+    "papaya",
+    "nispero"
+};
 
 
     const frutaUsuario = prompt("Ingrese una fruta").toLowerCase();
@@ -20,7 +19,6 @@ function tirandoFruta(){
 
     else
         console.log('Tenemos ${frutausuario}');
-}
 
 // EJERCICIO CALCULADORA DE EDAD
 function calcularEdad(fechaNacimiento) {
@@ -47,3 +45,22 @@ let numero2
 numero = (10 =='10') 
 numero2 = (10 ==='10') 
 console.log("el numero 10.6 es de tipo " + typeof(10.6))
+
+// DOBLE ELEMENTOS
+function duplicarNumeros(array) {
+    return array.map(function(num) {
+        return num * 2;
+    });
+}
+
+const numeros = [1, 2, 3, 4, 5];
+const multiplos = duplicarNumeros(numeros);
+console.log(multiplos);
+
+// NOMBRES QUE CONTIENEN A
+function filtrarNombres() {
+    let nombres = document.getElementById("nombres").value;
+    let listaNombres = nombres.split(',').map(nombre => nombre.trim());
+    let nombresConA = listaNombres.filter(nombre => nombre.charAt(0).toLowerCase() === 'a');
+    document.getElementById("resultado").innerHTML = nombresConA.length > 0 ? nombresConA.join(', ') : 'No hay nombres que comiencen con "A"';
+}
