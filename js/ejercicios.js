@@ -116,3 +116,11 @@ function obtenerPrimerosCaracteres() {
     let stringCortado = string.substring(0, numero);
     document.getElementById("resultado").innerHTML = stringCortado;
 }
+
+//String con separador
+function mostrarLista() {
+    let lista = document.getElementById("lista").value;
+    let arrayElementos = lista.split(',').map(elemento => elemento.trim());
+    let resultado = arrayElementos.join(' - ');
+    document.getElementById("resultado").innerHTML = resultado;
+}
