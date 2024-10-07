@@ -70,6 +70,18 @@ const numeros = [1, 2, 3, 4, 5];
 const multiplos = duplicarNumeros(numeros);
 console.log(multiplos);
 
+//TRIANGULOS DE ASTERISCOS
+for (let x = 1; x <= 5; x++) {
+    console.log('*'.repeat(i));
+}
+
+let n = 5; 
+for (let y = 1; y <= n; y++) {
+    let spaces = '-'.repeat(n - y); 
+    let stars = '*'.repeat(2 * i - 1); 
+    console.log(spaces + stars + spaces); 
+}
+
 // NOMBRES QUE CONTIENEN A
 function filtrarNombres() {
     let nombres = document.getElementById("nombres").value;
