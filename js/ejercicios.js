@@ -1,25 +1,3 @@
-// TIRANDO FRUTA
-const frutas = {
-    "melon",
-    "guayaba",
-    "mango",
-    "anana",
-    "frambuesa",
-    "maracuya",
-    "sandia",
-    "papaya",
-    "nispero"
-};
-
-
-    const frutaUsuario = prompt("Ingrese una fruta").toLowerCase();
-
-    if(frutas.includes(frutaUsuario))
-        console.log('Tenemos ${frutausuario}');
-
-    else
-        console.log('Tenemos ${frutausuario}');
-
 // EJERCICIO CALCULADORA DE EDAD
 function calcularEdad(fechaNacimiento) {
     const hoy = new Date();
@@ -39,12 +17,47 @@ const fechaNacimiento = prompt("Ingrese su fecha de nacimiento (Formato: YYYY-MM
 const edad = calcularEdad(fechaNacimiento);
 console.log(`Hola ${nombre}, tienes ${edad} años!`);
 
+// TIRANDO FRUTA
+const frutas = {
+    "melon",
+    "guayaba",
+    "mango",
+    "anana",
+    "frambuesa",
+    "maracuya",
+    "sandia",
+    "papaya",
+    "nispero"
+};
+
+const frutaUsuario = prompt("Ingrese una fruta").toLowerCase();
+    if(frutas.includes(frutaUsuario))
+        console.log('Tenemos ${frutausuario}');
+
+    else
+        console.log('Tenemos ${frutausuario}');
+
+
 // COMPARANDO DATOS Y TIPOS
 let numero
 let numero2
 numero = (10 =='10') 
 numero2 = (10 ==='10') 
 console.log("el numero 10.6 es de tipo " + typeof(10.6))
+
+// YO OBJETO
+const ciudad = {
+    nombre: "Nueva York",
+    fechaFundacion: "23 de Mayo de 1624",
+    poblacion: 8336000,
+    extension: "783.8 km²"
+};
+
+for (const clave in ciudad) {
+    if (ciudad.hasOwnProperty(clave)) {
+        console.log(`Clave: ${clave}, Valor: ${ciudad[clave]}`);
+    }
+}
 
 // DOBLE ELEMENTOS
 function duplicarNumeros(array) {
